@@ -15,9 +15,9 @@ const Navbar = () => {
                     <li class="nav-item">
                     <a className={router.pathname == "/" ? "nav-link active" : "nav-link"} aria-current="page" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                    <a className={router.pathname == "/about" ? "nav-link active" : "nav-link"} aria-current="page" href="/about">About</a>
-                    </li>
+                    <Link class="nav-link" href={{
+                                    pathname: `/products/products`
+                                }}>Products</Link>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Movies
